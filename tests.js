@@ -1,6 +1,5 @@
 var assert = require('assert');
-var extender = require('./extendArray');
-extender();
+require('./extendArray')();
 
 describe('List tests', function() {
   describe('ascend tests', function() {
