@@ -1,6 +1,6 @@
 module.exports = function() {
-  if(!Array.prototype.ascending) {
-    Array.prototype.ascending = function(callbackfn, thisArg) {
+  if(!Array.prototype.isAscending) {
+    Array.prototype.isAscending = function(callbackfn, thisArg) {
       if(this == null) {
         throw new TypeError('this is null or not defined');
       }
@@ -13,8 +13,8 @@ module.exports = function() {
     }
   }
 
-  if(!Array.prototype.strictAscending) {
-    Array.prototype.strictAscending = function(callbackfn, thisArg) {
+  if(!Array.prototype.isStrictAscending) {
+    Array.prototype.isStrictAscending = function(callbackfn, thisArg) {
       if(this == null) {
         throw new TypeError('this is null or not defined');
       }
@@ -27,8 +27,8 @@ module.exports = function() {
     }
   }
 
-  if(!Array.prototype.descending) {
-    Array.prototype.descending = function(callbackfn, thisArg) {
+  if(!Array.prototype.isDescending) {
+    Array.prototype.isDescending = function(callbackfn, thisArg) {
       if(this == null) {
         throw new TypeError('this is null or not defined');
       }
@@ -41,8 +41,8 @@ module.exports = function() {
     }
   }
 
-  if(!Array.prototype.strictDescending) {
-    Array.prototype.strictDescending = function(callbackfn, thisArg) {
+  if(!Array.prototype.isStrictDescending) {
+    Array.prototype.isStrictDescending = function(callbackfn, thisArg) {
       if(this == null) {
         throw new TypeError('this is null or not defined');
       }
